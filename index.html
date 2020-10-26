@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies & Local Storage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div>Select temperature scale:
+        <form>
+            <label>
+              <input data-select-unit type="radio" name="options" value="c"> Celsius 
+            </label><br>
+            <label>
+              <input data-select-unit type="radio" name="options" value="f"> Fahrenheit
+            </label>
+        </form>
+    </div> 
+    <article data-container class="container text-center d-none">
+        <h1>Weather in <span data-city></span></h1>
+        <br>
+        <img data-image src="" width="100" height="100"><br>
+        <h3 data-description></h3>
+        <h5>Temperature now: <span data-temp-now></span> </h5>
+        <p>Feels like: <span data-feels></span></p>
+        Sunrise : <span data-sunrise></span><br>
+        Sunset : <span data-sunset></span><br>
+    </article>
+
+</body>
+</html>
